@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#dae2fd",
+              "on-tertiary-container": "#3e5868",
+              "tertiary-fixed-dim": "#c2def0",
+              "tertiary-dim": "#3c5666",
+              "surface-container": "#ebeeef",
+              "background": "#C6C6C6",
+              "on-surface": "#2d3435",
+              "on-primary-container": "#4a5167",
+              "error": "#9f403d",
+              "inverse-surface": "#0c0f0f",
+              "surface-variant": "#dde4e5",
+              "on-primary": "#f7f7ff",
+              "on-primary-fixed-variant": "#535b71",
+              "tertiary": "#486272",
+              "surface": "#C6C6C6",
+              "on-tertiary-fixed": "#2c4655",
+              "on-tertiary": "#f4faff",
+              "on-secondary-fixed": "#324053",
+              "on-secondary-fixed-variant": "#4e5c71",
+              "surface-container-high": "#e4e9ea",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#c7d5ed",
+              "surface-dim": "#d4dbdd",
+              "inverse-primary": "#dae2fd",
+              "surface-bright": "#f9f9f9",
+              "surface-container-low": "#f2f4f4",
+              "on-error-container": "#752121",
+              "primary-container": "#dae2fd",
+              "surface-container-highest": "#dde4e5",
+              "on-secondary-container": "#455367",
+              "on-secondary": "#f8f8ff",
+              "on-tertiary-fixed-variant": "#486272",
+              "secondary-container": "#d5e3fc",
+              "outline-variant": "#adb3b4",
+              "primary-fixed-dim": "#ccd4ee",
+              "primary-dim": "#4a5268",
+              "surface-tint": "#565e74",
+              "secondary-fixed": "#d5e3fc",
+              "primary": "#565e74",
+              "secondary": "#526074",
+              "on-background": "#2d3435",
+              "outline": "#757c7d",
+              "on-surface-variant": "#5a6061",
+              "on-error": "#fff7f6",
+              "tertiary-container": "#d0ecff",
+              "inverse-on-surface": "#9c9d9d",
+              "tertiary-fixed": "#d0ecff",
+              "secondary-dim": "#465468",
+              "on-primary-fixed": "#373f54",
+              "error-dim": "#4e0309",
+              "error-container": "#fe8983"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #C6C6C6;
+            font-family: 'Inter', sans-serif;
+        }
+        .page-frame {
+            border: 1px solid #000000 !important;
+            background-color: #C6C6C6;
+            margin: 10px;
+            min-height: calc(100vh - 20px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .page-frame {
+                margin: 20px;
+                min-height: calc(100vh - 40px);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-on-surface p-0">
+<div class="page-frame">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-[#C6C6C6]/90 border-b border-black/10 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 md:px-8 py-5 max-w-7xl mx-auto">
+<!-- Left Side: Socials -->
+<div class="flex items-center gap-4 text-[#2d3435]">
+<a class="text-[10px] font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary border-b border-primary/30 pb-0.5" href="#">GITHUB</a>
+<a class="text-[10px] font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary border-b border-primary/30 pb-0.5" href="#">LINKEDIN</a>
+<a class="text-[10px] font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary border-b border-primary/30 pb-0.5" href="#">TWITTER</a>
+<a class="text-[10px] font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary border-b border-primary/30 pb-0.5" href="#">TELEGRAM</a>
+</div>
+<!-- Right Side: Blog Link -->
+<div class="flex items-center">
+<a class="text-[10px] font-bold uppercase tracking-widest hover:text-primary transition-all duration-300 text-primary border-b border-primary/30 pb-0.5" href="#">Blog</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-12 pb-16 px-6 max-w-7xl mx-auto">
+<article class="bg-surface-container-lowest border border-black overflow-hidden shadow-none">
+<!-- Hero Banner -->
+<div class="w-full h-[300px] md:h-[400px] bg-surface-container-high relative">
+<img alt="Hero Image" class="w-full h-full object-cover grayscale contrast-125" data-alt="Abstract dark code interface with syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdMki7vEazRJhZGXphDhqenen4k8xZYbDmLZXXyKmJPu06tYyFmDp9z740g9m9clgQ5te-D3H7xtR0hlPJBzb6BRzpQpdHm87P5PJND4oP9LVes8-ziVI_SZNXXHr2EdBt5OgMQJ8ZSkhRaHseoAA1q9h-NUiAUqLZbGUJp3qqjErJ-PQkQihiqGoiwOnBEEXO2CIEpjq699f0rNvZXTxD_9Ak-C3TfG0LZhaRcQ9-4L90F8pPQzEGvWWwA-1OanmdR1XPV80WuKo"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<!-- Content Container -->
+<div class="p-8 md:p-16">
+<!-- Header Info -->
+<header class="mb-12">
+<div class="flex items-center gap-2 mb-4 text-xs font-['Inter'] font-medium uppercase tracking-tighter text-on-surface-variant">
+<span>Development</span>
+<span class="w-1 h-1 bg-black rounded-full"></span>
+<span>12 Min Read</span>
+</div>
+<h1 class="text-3xl md:text-6xl font-['Space_Grotesk'] font-bold tracking-tight text-on-surface mb-6 leading-[1.1]">
+                            Architecting Scalable Micro-Frontends with Intentional Asymmetry
+                        </h1>
+<div class="text-on-surface-variant font-['Space_Grotesk'] font-medium text-sm">
+                            PUBLISHED ON OCTOBER 24, 2024 BY ELIYAS
+                        </div>
+</header>
+<!-- Article Body -->
+<section class="max-w-3xl font-['Space_Grotesk'] text-lg md:text-xl leading-relaxed space-y-8 text-on-surface">
+<p class="first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">
+                            Modern web development often prioritizes standardization over soul. In the pursuit of efficiency, we’ve flattened the digital landscape. This article explores how to reintroduce intentional friction and aesthetic depth into scalable frontend architectures without sacrificing maintainability.
+                        </p>
+<p>
+                            The core philosophy lies in treating UI components as editorial elements rather than mere data containers. By leveraging CSS Grid for asymmetric layouts and utilizing tonal layering instead of harsh borders, we create a sensory experience that guides the user through complex information flows.
+                        </p>
+<blockquote class="border-l-4 border-black pl-8 py-4 my-12 italic text-2xl font-light">
+                            "Precision is not just about the absence of error, but the presence of intent."
+                        </blockquote>
+<p>
+                            When we look at the 'The Digital Curator' design system, we see a move away from the 'templated' look. Instead of a rigid, boxed-in grid, we utilize intentional asymmetry and tonal layering to create a sense of depth and curated precision.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+<div class="bg-surface-container-low p-6 border border-black/10">
+<h3 class="font-bold mb-4 uppercase text-sm tracking-widest">01. Tonal Dividers</h3>
+<p class="text-base text-on-surface-variant">Eliminate 1px lines. Use shifts in background value to define scope and boundary.</p>
+</div>
+<div class="bg-surface-container-low p-6 border border-black/10">
+<h3 class="font-bold mb-4 uppercase text-sm tracking-widest">02. Micro-Transitions</h3>
+<p class="text-base text-on-surface-variant">Every interaction should feel tactile. 300ms bezier curves provide a premium, weighted feel.</p>
+</div>
+</div>
+<p>
+                            In conclusion, architecting for the modern web requires a balance between the utilitarian needs of the developer and the aesthetic expectations of a discerning audience. The future is asymmetric.
+                        </p>
+</section>
+<!-- Tags -->
+<footer class="mt-16 pt-8 border-t border-black/10 flex flex-wrap gap-3">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-['Inter'] font-medium uppercase tracking-tighter text-on-surface-variant">Architecture</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-['Inter'] font-medium uppercase tracking-tighter text-on-surface-variant">UI/UX</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-['Inter'] font-medium uppercase tracking-tighter text-on-surface-variant">Frontend</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-['Inter'] font-medium uppercase tracking-tighter text-on-surface-variant">CSS Grid</span>
+</footer>
+</div>
+</article>
+<!-- Comments Section -->
+<section class="mt-12 bg-surface-container-lowest border border-black p-8 md:p-16">
+<h2 class="text-2xl font-['Space_Grotesk'] font-bold tracking-tight mb-8">Discussion (3)</h2>
+<!-- Auth CTA -->
+<div class="mb-12 p-8 bg-surface-container-low border border-dashed border-black/20 text-center">
+<p class="mb-6 font-['Inter'] text-sm text-on-surface-variant">Join the conversation. Share your thoughts on micro-frontend architecture.</p>
+<button class="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-md hover:bg-zinc-800 transition-all font-['Space_Grotesk'] text-sm font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+                        Sign in with GitHub
+                    </button>
+</div>
+<!-- Threaded Comments -->
+<div class="space-y-10">
+<!-- Comment 1 -->
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex-shrink-0 overflow-hidden border border-black/10">
+<img alt="Avatar" data-alt="User avatar male" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Imehfo3sQJYle16sHhmFf9CeWWOOfjNGJPTcF2EtNjFlMLyk4E9jLWF5DpTlt5w2-zMDcMRCdioVr4WWzjpzyUXXkBQkYpHTXLU9_iWzVGwlfWB4Ce85uZbTLJtstyFyL9byPb4FhT1V1sKPM4CjItvqcsWv57bQPFhFPPE2u4pzAAXC71tmuPb-i2G-X5qNP9QCTwoXFh0mLeq-RgUzeDAizScusFbdicGGnG2kwq1N5Qe0vBjAC-XcZsgmChcn0dE0SYdF6Ag"/>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-bold font-['Space_Grotesk'] text-sm">marcus_dev</span>
+<span class="text-[10px] font-['Inter'] text-on-surface-variant uppercase tracking-tighter">2 hours ago</span>
+</div>
+<p class="text-on-surface-variant text-sm font-['Inter'] leading-relaxed max-w-2xl">
+                                The focus on intentional asymmetry is refreshing. Most frameworks force you into such rigid patterns that the final product loses its personality. Great write-up.
+                            </p>
+<button class="mt-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:underline">Reply</button>
+</div>
+</div>
+<!-- Nested Comment 1.1 -->
+<div class="flex gap-4 ml-8 md:ml-16">
+<div class="w-10 h-10 bg-surface-container-highest rounded-full flex-shrink-0 overflow-hidden border border-black/10">
+<img alt="Avatar" data-alt="User avatar female" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbbXagECkzWcbJQu-T-8YDfGeRpoCCZxLimCcvwtCYk_xffNvwd48l2DxXJfgcawVWraEXCtEZ4GN8_XhGQGgy9grT_9NO5q_MhwIRM1tnDQ6smANZDre9bHUQ-nCEwo0ghH5ac8o-0XFeO-9qzoAEzMfI4zP0KkiYg_LFn4-wEXlO7vqnI_Z_UKZkaz5M_ndpIXe38Gwg57dr4BLV9wby4I2Z1wO_UMdmYXVvkTr8t0TdWjW6tE_GpEdUObk1hzwW7vJeNTqgrqk"/>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-bold font-['Space_Grotesk'] text-sm">eliyas</span>
+<span class="bg-black text-white text-[8px] px-2 py-0.5 rounded-full uppercase font-bold tracking-tighter">Author</span>
+<span class="text-[10px] font-['Inter'] text-on-surface-variant uppercase tracking-tighter">1 hour ago</span>
+</div>
+<p class="text-on-surface-variant text-sm font-['Inter'] leading-relaxed max-w-2xl">
+                                Exactly! It's about breaking the "bootstrapped" feel without breaking the build system.
+                            </p>
+<button class="mt-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:underline">Reply</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#C6C6C6] border-t border-black/10 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<p class="font-body text-[10px] font-bold tracking-[0.15em] uppercase text-on-surface-variant">Built with ❤️ and lots of coffee</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 text-[10px] font-bold tracking-widest uppercase">
+<a class="text-[#2d3435] hover:text-primary transition-opacity" href="#">GitHub</a>
+<a class="text-[#2d3435] hover:text-primary transition-opacity" href="#">LinkedIn</a>
+<a class="text-[#2d3435] hover:text-primary transition-opacity" href="#">Twitter</a>
+<a class="text-[#2d3435] hover:text-primary transition-opacity" href="#">Telegram</a>
+<a class="underline hover:text-primary transition-opacity text-primary font-black" href="#">Blog</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pb-12 text-center md:text-left">
+<p class="text-[10px] text-outline opacity-50 uppercase tracking-[0.2em]">© 2024 — ALL RIGHTS RESERVED</p>
+</div>
+</footer>
+</div>
+</body></html>
