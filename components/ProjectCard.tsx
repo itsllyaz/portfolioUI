@@ -9,7 +9,10 @@ interface ProjectCardProps {
   githubLink?: string
   liveLink?: string
 }
-
+/*
+1. remove p-8
+2. remove mb-8
+*/
 export function ProjectCard({
   title,
   description,
@@ -20,8 +23,8 @@ export function ProjectCard({
   liveLink,
 }: ProjectCardProps) {
   return (
-    <div className="group bg-surface-container-lowest p-8 rounded-none border border-black/5 transition-all duration-500 hover:scale-[1.01] hover:border-black/20">
-      <div className="aspect-video bg-surface-container overflow-hidden rounded-none mb-8 border border-black/5">
+    <div className="group bg-surface-container-lowest rounded-xl border-2 border-black/5 transition-all duration-500 hover:scale-[1.01] hover:border-black/5">  {/* heeeereeee */}
+      <div className="aspect-[7/3] bg-surface-container overflow-hidden rounded-xl border border-black/5">
         <Image
           src={image}
           alt={imageAlt}
@@ -32,9 +35,9 @@ export function ProjectCard({
         />
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-3 p-4">
         <div className="flex justify-between items-start">
-          <h3 className="text-2xl font-headline font-bold">{title}</h3>
+          <h3 className="text-xl font-headline font-bold">{title}</h3>
           <div className="flex gap-3">
             {githubLink && (
               <a
@@ -43,7 +46,7 @@ export function ProjectCard({
                 rel="noopener noreferrer"
                 className="material-symbols-outlined text-outline hover:text-primary transition-colors"
               >
-                code
+                {/*code*/}
               </a>
             )}
             {liveLink && (
@@ -53,12 +56,12 @@ export function ProjectCard({
                 rel="noopener noreferrer"
                 className="material-symbols-outlined text-outline hover:text-primary transition-colors"
               >
-                open_in_new
+                 {/*open_in_new*/}
               </a>
             )}
           </div>
         </div>
-
+Projects
         <p className="text-on-surface-variant leading-relaxed">{description}</p>
 
         <div className="flex flex-wrap gap-2 pt-2">

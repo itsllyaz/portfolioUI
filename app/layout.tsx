@@ -2,12 +2,13 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ELIYAS | Solutions Engineer',
+  //title: 'ELIYAS | Solutions Engineer',
+	title: "llyaz", 
   description: 'Solutions Engineer specializing in building scalable distributed systems and high-performance web architectures.',
   keywords: 'solutions engineer, web architecture, distributed systems, software development',
-  authors: [{ name: 'ELIYAS' }],
+  authors: [{ name: 'llyaz' }],
   openGraph: {
-    title: 'ELIYAS | Solutions Engineer',
+    title: 'llyaz | Solutions Engineer',
     description: 'Solutions Engineer specializing in building scalable distributed systems and high-performance web architectures.',
     type: 'website',
   },

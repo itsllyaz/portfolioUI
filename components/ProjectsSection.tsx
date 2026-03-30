@@ -2,57 +2,92 @@
 
 import { useState } from 'react'
 import { ProjectCard } from './ProjectCard'
+import { title } from 'process'
+import { imageOptimizer } from 'next/dist/server/image-optimizer'
 
 const projects = [
   {
     id: 1,
-    title: 'Synthetix Core',
+    title: 'F4F-Exchange | Full-Stack Developmens',
     description:
-      'A distributed state management system built for high-concurrency enterprise applications. Optimized for sub-50ms latency.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCYk1yQvlUHR1f-7y6etNVFCamj0UbRoMdnvzxgBEIKvnI18jX7NG_yp2yu1fFF0zj9LOeIZldl8yLVLF04BCUlFHCkBTXI8zpnvSJHoFanW8cXkZs_l6xTh_q7vlWXxmBmVAfJ6rzfe5aPcTY5bly219b8fgTW5Q1DvhyYEaxLSZER09HYepvj5QhZTi6oCMS66PtpcjP_0vyZ5fIAZBOAe4UKfF2_je09CeK6a_8hI3EeMlDm_8l7rci_xewnmLKc0cpt0MknDI8',
-    imageAlt: 'Digital interface showing a dashboard with dark mode UI',
-    tags: ['NextJS', 'Supabase', 'Rust'],
-    category: 'React',
-    githubLink: '#',
+      'a “follow-for-follow” directory where users can log in with Twitter (X), see others, and follow/unfollow them',
+    image: 'https://picsum.photos/200/300',
+    imageAlt: 'F4F-Exchange full stack app',
+    tags: ['NextJS', 'Typescript', 'Flask', 'Database', 'Frontend', 'Web Development'],
+    category: 'TYPESCRIPT',
+    githubLink: 'https://github.com/itsllyaz/F4F-Exchange',
     liveLink: '#',
   },
   {
     id: 2,
-    title: 'Flux Analytics',
+    title: 'WakaTracker',
     description:
-      'Real-time traffic monitoring and behavioral analysis platform with predictive modeling using Python and Scikit-learn.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDnhI_GoRC44r8IcfLWn0q46yyM5jHSzbup0u1afR8omoGBYkYh6RhVxjj2h5t8Xe6HI73c2RtPKeY1aU3UOmV-3wstdpxAPNOp9lLW5qP6oA1zBJf_5bbxsa1uSQi7UVOg3AyvvfQFn7or6lHNn7CbdpaPoCmv1ysCHQumglMDXEiBdEuSSztKfz4wBLZi5PciKaLVPxq8YWmPuqP70Ta-2jYvUZqSgNU-kKDPbDUQ2ZgleunQzw3WAUIH3nEMauxaaNirHIO0TTg',
-    imageAlt: 'Data analysis visualization on a tablet screen',
-    tags: ['Python', 'Tailwind', 'D3JS'],
-    category: 'Python',
-    githubLink: '#',
+      'WakaTrackr is a Telegram bot that helps you track your coding habits ',
+    image: 'https://picsum.photos/200/300',
+    imageAlt: 'WakaTracker',
+    tags: ['Python', 'Telegram', 'Database', 'Bot'],
+    category: 'PYTHON',
+    githubLink: 'https://github.com/itsllyaz/WakaTracker',
     liveLink: '#',
   },
   {
     id: 3,
-    title: 'CloudSync',
-    description: 'Distributed file synchronization system with end-to-end encryption and real-time collaboration features.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAdMki7vEazRJhZGXphDhqenen4k8xZYbDmLZXXyKmJPu06tYyFmDp9z740g9m9clgQ5te-D3H7xtR0hlPJBzb6BRzpQpdHm87P5PJND4oP9LVes8-ziVI_SZNXXHr2EdBt5OgMQJ8ZSkhRaHseoAA1q9h-NUiAUqLZbGUJp3qqjErJ-PQkQihiqGoiwOnBEEXO2CIEpjq699f0rNvZXTxD_9Ak-C3TfG0LZhaRcQ9-4L90F8pPQzEGvWWwA-1OanmdR1XPV80WuKo',
-    imageAlt: 'Cloud infrastructure visualization',
-    tags: ['TypeScript', 'Node.js', 'PostgreSQL'],
-    category: 'Node.js',
-    githubLink: '#',
+    title: 'xo an experimental Go library',
+    description: 'Go library for X API ', 
+ 		image: 'https://picsum.photos/200/300', 
+ 		imageAlt: 'xo-go-library',
+    tags: ['Go', 'Library'],
+    category: 'GO',
+    githubLink: 'https://github.com/itsllyaz/xo',
     liveLink: '#',
   },
   {
     id: 4,
-    title: 'DesignVault',
+    title: 'Unofficial Hasab AI Golang SDK',
     description: 'Component library and design system documentation platform with live code previews and accessibility audits.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDkB8lt_SpBzj4gE2XpG1zIPhVEZyKMTvfW2ZkkpBDm-SvMfzaxlGQcwugiqwY96T-HiwosviadqMfpGlExPqPwO4L56jyEOTjhsAKoolodhJPjrYEExGJabRpscAWZ92sL8Gt03a1YQvvxiIXQu2EVhn48TDj5FiK5NPaD6vHiFvYw25a2ABwSjEaeh4LO4AOmsqyyiWGDKiHxpzgwpT4O2QCG_vTGahahmuNMBLVbnUhtmuZ0f3YlX3PMW4LMNcqE4aPPptItK-0',
-    imageAlt: 'Design system component showcase',
-    tags: ['React', 'Tailwind', 'Storybook'],
-    category: 'React',
-    githubLink: '#',
+ 		image: 'https://picsum.photos/200/300',
+		imageAlt: 'Golang SDK',
+    tags: ['Go', 'SDK'],
+    category: 'GO',
+    githubLink: 'https://github.com/itsllyaz/hasab-ai-golang"',
     liveLink: '#',
   },
+	{
+		id: 5, 
+		title: "gommit | CLI Development", 
+		description:"a “follow-for-follow” directory where users can log in with Twitter (X), see others, and follow/unfollow them",
+		image: "https://picsum.photos/200/300", 
+		imageAlt: "gommit cli application", 
+		tags: ["TypeScript", "Flask", "Database", "Frontend", "Web Development"], 
+		category: "GO", 
+		githubLink: "https://github.com/itsllyaz/gommit", 
+		liveLink: "#", 
+	}, 
+	{
+		id: 6, 
+		title: 'Indent Rainbow for Zed', 
+		description: 'Adds a fun rainbow color effect to indentation in Zed editor.Currently, this is a minimal dev extension skeleton',
+		image: 'https://picsum.photos/200/300', 
+		imageAlt: "Zed-Indent-Rainbow", 
+		tags: ["Rust", "Tool"], 
+		category: "RUST", 
+		githubLink: "https://github.com/itsllyaz/zed-indent-rainbow", 
+		liveLink: "#"
+	}, 
+	{
+		id: 7, 
+		title: "Go CRUD API with Gorilla Mux", 
+		description: "This is a simple RESTful API built with Go and Gorilla Mux that allows you to manage user data. It supports basic CRUD operations:", 
+		image: "https://picsum.photos/200/300",
+		imageAlt: "Go-Gorilla-CRUD", 
+		tags: ["GO", "API", "WEB DEVELOPMENT"], 
+		category: "GO", 
+		githubLink: "https://github.com/itsllyaz/go-crud-gorilla-mux", 
+		liveLink: "#"
+	}
 ]
 
-const categories = ['All', 'React', 'Python', 'Tailwind', 'Node.js']
+const categories = ['All', 'GO', 'PYTHON', 'CLI', 'API', 'TYPESCRIPT', 'DATABASE', 'FRONTEND', 'WEB DEVELOPMENT', 'RUST', 'TOOL', 'SDK']
 
 export function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState('All')
@@ -63,19 +98,21 @@ export function ProjectsSection() {
   return (
     <section className="py-32 border-y border-black/5 bg-background" id="projects">
       <div className="max-w-7xl mx-auto px-8">
+			<h2 className='text-5xl font-headline font-bold tracking-tight text-on-background mb-4'>Projects</h2>
+			<hr />
+			<br />	
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div>
-            <h2 className="text-5xl font-headline font-bold tracking-tight text-on-background mb-4">Projects</h2>
-            <p className="text-on-surface-variant max-w-md">A curated selection of technical challenges and digital solutions.</p>
-          </div>
-
+					{/*            <h2 className="text-5xl font-headline font-bold tracking-tight text-on-background mb-4">Projects</h2> */}
+            <p className="text-on-surface-variant max-w-md"></p>
+          </div>	
           {/* Filter Buttons */}
-          <div className="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+          <div className="flex gap-3 overflow-x-auto scrollbar pb-2">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 border border-black text-xs font-bold uppercase tracking-widest whitespace-nowrap transition-all duration-300 ${
+                className={`px-6 py-2 border border-black rounded-sm text-xs font-bold uppercase tracking-widest whitespace-nowrap transition-all duration-300 ${
                   activeCategory === category
                     ? 'bg-primary text-on-primary'
                     : 'bg-surface-container-highest text-on-surface-variant hover:bg-surface-container'
@@ -88,7 +125,7 @@ export function ProjectsSection() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 rounded-lg md:grid-cols-3 gap-2">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}

@@ -4,7 +4,11 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { Comment } from '@/components/Comment'
 import { blogPosts } from '@/lib/blog-data'
+/*
+functions:
+		generateStaticParams --> a function that will get blog slug... 
 
+*/
 interface BlogDetailPageProps {
   params: Promise<{
     slug: string
@@ -26,7 +30,7 @@ export async function generateMetadata({ params }: BlogDetailPageProps) {
   }
 
   return {
-    title: `${post.title} | ELIYAS`,
+    title: `${post.title}`,
     description: post.excerpt,
   }
 }
@@ -110,7 +114,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
               Join the conversation. Share your thoughts on {post.title.toLowerCase()}.
             </p>
             <button className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-md hover:bg-zinc-800 transition-all font-headline text-sm font-bold uppercase tracking-widest">
-              <span className="material-symbols-outlined">code</span>
+              <span className="material-symbols-outlined">{/* code*/}</span>
               Sign in with GitHub
             </button>
           </div>

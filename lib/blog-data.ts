@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
         </p>
       </section>
     `,
-    author: 'ELIYAS',
+    author: 'llyaz',
     date: 'October 24, 2024',
     readTime: 8,
     tags: ['Rust', 'Memory'],
@@ -73,6 +73,13 @@ export const blogPosts: BlogPost[] = [
         content:
           'The focus on intentional asymmetry is refreshing. Most frameworks force you into such rigid patterns that the final product loses its personality. Great write-up.',
       },
+			{
+				id: '2', 
+				author: 'boo', 
+				avatar: '', 
+				date: '3 hours ago', 
+				content: 'boo boo boo boo boo boo boo boo boo boo boo booboo'
+			}
     ],
   },
   {
@@ -107,7 +114,7 @@ export const blogPosts: BlogPost[] = [
         <p>This article explores the tools and techniques for porting legacy C++ applications to WebAssembly, focusing on video processing, real-time data analysis, and graphics-intensive applications.</p>
       </section>
     `,
-    author: 'ELIYAS',
+    author: 'llyaz',
     date: 'August 5, 2024',
     readTime: 15,
     tags: ['Wasm', 'Frontend'],
