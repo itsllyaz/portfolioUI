@@ -4,7 +4,8 @@ import { ProjectsSection } from '@/components/ProjectsSection'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {
-  return (
+ 	// live with out me... 
+	return (
     <>
       <Navigation />
       <main className="flex-grow pb-24">
