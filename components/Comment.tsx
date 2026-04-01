@@ -12,7 +12,7 @@ export function Comment({ comment, isAuthor = false, nested = false }: CommentPr
     <div className={`flex gap-4 ${nested ? 'ml-8 md:ml-16' : ''}`}>
       <div className="w-12 h-12 bg-surface-container-highest rounded-full flex-shrink-0 overflow-hidden border border-black/10">
         <Image
-          src={comment.avatar}
+          src={comment.avatar || "/default-avatar.png"}
           alt={`${comment.author} avatar`}
           width={48}
           height={48}
@@ -31,7 +31,7 @@ export function Comment({ comment, isAuthor = false, nested = false }: CommentPr
           <span className="text-[10px] font-body text-on-surface-variant uppercase tracking-tighter">{comment.date}</span>
         </div>
 
-        <p className="text-on-surface-variant text-sm font-body leading-relaxed max-w-2xl">{comment.content}</p>
+        <p className="text-on-surface-variant text-sm font-body leading-relaxed max-w-2xl">{comment.text}</p>
 
         <button className="mt-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:underline">
           Reply

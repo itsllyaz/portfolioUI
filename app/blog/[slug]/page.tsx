@@ -4,6 +4,12 @@ import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 import { Comment } from '@/components/Comment'
 import { blogPosts } from '@/lib/blog-data'
+import SignInWithGitHub from "@/components/SignInWithGitHub"
+import CommentBox from '@/components/CommentsSection'
+import CommentsSection from '@/components/CommentsSection'
+
+
+
 /*
 functions:
 		generateStaticParams --> a function that will get blog slug... 
@@ -113,10 +119,12 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
             <p className="mb-6 font-body text-sm text-on-surface-variant">
               Join the conversation. Share your thoughts on {post.title.toLowerCase()}.
             </p>
-            <button className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-md hover:bg-zinc-800 transition-all font-headline text-sm font-bold uppercase tracking-widest">
-              <span className="material-symbols-outlined">{/* code*/}</span>
+							{/*<button className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-md hover:bg-zinc-800 transition-all font-headline text-sm font-bold uppercase tracking-widest">
+              <span className="material-symbols-outlined">code</span>
               Sign in with GitHub
-            </button>
+            </button> */}
+					
+					<CommentsSection post={post} />	
           </div>
 
           {/* Threaded Comments */}
