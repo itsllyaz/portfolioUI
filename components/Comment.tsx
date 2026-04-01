@@ -31,7 +31,7 @@ export function Comment({ comment, isAuthor = false, nested = false }: CommentPr
           <span className="text-[10px] font-body text-on-surface-variant uppercase tracking-tighter">{comment.date}</span>
         </div>
 
-        <p className="text-on-surface-variant text-sm font-body leading-relaxed max-w-2xl">{comment.text}</p>
+        <p className="text-on-surface-variant text-sm font-body leading-relaxed max-w-2xl">{comment.content}</p>
 
         <button className="mt-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:underline">
           Reply

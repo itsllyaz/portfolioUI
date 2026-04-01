@@ -15,7 +15,17 @@ export function useComments(postId: string) {
     );
 
     const unsub = onSnapshot(q, (snapshot) => {
-      setComments(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+      setComments(
+        snapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            ...data,
+            // Normalize Firestore field "text" into "content"
+            content: data.text ?? data.content ?? "",
+          };
+        })
+      );
     });
 
     return () => unsub();
@@ -23,4 +33,4 @@ export function useComments(postId: string) {
 
   return comments;
 }
-
+ 
