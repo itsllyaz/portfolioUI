@@ -18,7 +18,8 @@ export interface Comment {
   author: string
   avatar: string
   date: string
-  text: string
+	content?:string
+  text?: string
   replies?: Comment[]
 }
 
