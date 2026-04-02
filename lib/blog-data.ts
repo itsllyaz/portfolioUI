@@ -5,8 +5,8 @@ export interface BlogPost {
   excerpt: string
   content: string
   author: string
-  date: string
-  readTime: number
+  date?: string
+  readTime?: number
   tags: string[]
   image: string
   imageAlt: string

@@ -8,8 +8,8 @@ interface ArticleCardProps {
   image: string
   imageAlt: string
   tags: string[]
-  date: string
-  readTime: number
+  date?: string
+  readTime?: number
 }
 
 export function ArticleCard({
