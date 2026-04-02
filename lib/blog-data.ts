@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['Rust', 'Memory'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDkB8lt_SpBzj4gE2XpG1zIPhVEZyKMTvfW2ZkkpBDm-SvMfzaxlGQcwugiqwY96T-HiwosviadqMfpGlExPqPwO4L56jyEOTjhsAKoolodhJPjrYEExGJabRpscAWZ92sL8Gt03a1YQvvxiIXQu2EVhn48TDj5FiK5NPaD6vHiFvYw25a2ABwSjEaeh4LO4AOmsqyyiWGDKiHxpzgwpT4O2QCG_vTGahahmuNMBLVbnUhtmuZ0f3YlX3PMW4LMNcqE4aPPptItK-0',
     imageAlt: 'Abstract geometric dark blue and purple code visualization',
-    comments: [
+		/*comments: [
       {
         id: '1',
         author: 'marcus_dev',
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
 				date: '3 hours ago', 
 				content: 'boo boo boo boo boo boo boo boo boo boo boo booboo'
 			}
-    ],
+    ], */
   },
   {
     id: '2',

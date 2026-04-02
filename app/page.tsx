@@ -7,7 +7,7 @@ export default function Home() {
  	// live with out me... 
 	return (
     <>
-      <Navigation />
+      <Navigation  />
       <main className="flex-grow pb-24">
         <HeroSection />
         <ProjectsSection />

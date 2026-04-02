@@ -23,7 +23,7 @@ export function ProjectCard({
   liveLink,
 }: ProjectCardProps) {
   return (
-    <div className="group bg-surface-container-lowest rounded-xl border-2 border-black/5 transition-all duration-500 hover:scale-[1.01] hover:border-black/5">  {/* heeeereeee */}
+    <div className="group project-card transition-all duration-500 hover:scale-[1.01]">  {/* heeeereeee */}
       <div className="aspect-[7/3] bg-surface-container overflow-hidden rounded-xl border border-black/5">
         <Image
           src={image}
@@ -35,16 +35,16 @@ export function ProjectCard({
         />
       </div>
 
-      <div className="space-y-3 p-4">
+      <div className="space-y-3 p-4 text-white">
         <div className="flex justify-between items-start">
-          <h3 className="text-xl font-headline font-bold">{title}</h3>
+          <h3 className="text-xl font-headline text-white font-bold">{title}</h3>
           <div className="flex gap-3">
             {githubLink && (
               <a
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="material-symbols-outlined text-outline hover:text-primary transition-colors"
+                className="material-symbols-outlined text-white hover:text-primary transition-colors"
               >
                 {/*code*/}
               </a>
@@ -54,7 +54,7 @@ export function ProjectCard({
                 href={liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="material-symbols-outlined text-outline hover:text-primary transition-colors"
+                className="material-symbols-outlined text-white hover:text-primary transition-colors"
               >
                  {/*open_in_new*/}
               </a>
@@ -62,13 +62,13 @@ export function ProjectCard({
           </div>
         </div>
 Projects
-        <p className="text-on-surface-variant leading-relaxed">{description}</p>
+        <p className="text-white leading-relaxed ">{description}</p>
 
         <div className="flex flex-wrap gap-2 pt-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 border border-black/5 bg-surface-container-high text-[10px] font-bold text-on-surface-variant tracking-[0.15em] uppercase"
+              className="px-3 py-1 border border-black/5 bg-surface-container-high  text-[10px] font-bold text-on-surface-variant tracking-[0.15em] uppercase rounded-xl"
             >
               #{tag}
             </span>

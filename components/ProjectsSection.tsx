@@ -96,9 +96,9 @@ export function ProjectsSection() {
     activeCategory === 'All' ? projects : projects.filter((p) => p.category === activeCategory)
 
   return (
-    <section className="py-32 border-y border-black/5 bg-background" id="projects">
+    <section className="py-32 border-y border-black/5" id="projects">
       <div className="max-w-7xl mx-auto px-8">
-			<h2 className='text-5xl font-headline font-bold tracking-tight text-on-background mb-4'>Projects</h2>
+			<h2 className='text-5xl font-headline  font-bold tracking-tight text-white mb-4'>Projects</h2>
 			<hr />
 			<br />	
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">

@@ -5,26 +5,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*replace all or the two body with the new and see it*/
+/* 🔥 BASE */
+/* 🔥 BASE + COMBINED BACKGROUNDS */
+html {
+  /* This ensures the page can actually grow */
+  height: auto;
+}
 
-html,
 body {
   width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #c6c6c6;
-  color: #1a1a1a;
+  background-color: #050505;
+  color: #dd4115;
   font-family: 'Inter', sans-serif;
+  
+  /* Combined Backgrounds: Noise/Grid + Glows */
+  background-image: 
+    /* 1. Grid/Noise Layer */
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://w3.org id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E"),
+    /* 2. Glow Layer */
+    radial-gradient(circle at 20% 30%, rgba(221, 65, 21, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(221, 65, 21, 0.15), transparent 40%);
+  
+  background-size: 56px 56px, 56px 56px, 200px 200px, 100% 100%, 100% 100%;
+  background-attachment: fixed; /* This keeps the background still while you scroll content */
+  
+  /* Remove position: fixed; inset: 0; — these were breaking your scroll */
 }
 
-body {
-  min-height: 100vh;
+.page-frame {
+  border: 1px solid rgba(255,255,255,0.08); /* softer border */
+  background-color: rgba(0,0,0,0.4);        /* semi transparent */
+  backdrop-filter: blur(6px);              /* 🔥 glass effect */
+  margin: 20px;
+  min-height: calc(100vh - 40px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+	border-radius: 20px;
 }
 
+
+
+
+/* ICONS */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
@@ -40,16 +76,7 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-.page-frame {
-  border: 1px solid #000000;
-  background-color: #c6c6c6;
-  margin: 20px;
-  min-height: calc(100vh - 40px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
+
 
 @media (max-width: 768px) {
   .page-frame {
@@ -58,16 +85,19 @@ body {
   }
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
+/* SELECTION */
 ::selection {
-  background-color: #dae2fd;
-  color: #4a5167;
+  background-color: rgba(221, 65, 21, 0.4); /* match theme */
+  color: #ffffff;
 }
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+

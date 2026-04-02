@@ -34,12 +34,12 @@ export function HeroSection() {
 
 					{/*waka end here*/}
           {/* Main Heading */}
-          <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tighter leading-[0.9] text-on-background">
+          <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tighter leading-[0.9] text-white">
             Hi, I&apos;m ELIYAS, I engineer solutions with code
           </h1>
 
           {/* Description */}
-          <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light">
+          <p className="text-xl text-white max-w-2xl leading-relaxed font-light">
           	I’ve always been fascinated by the unseen engines that keep systems running. That curiosity naturally drew me toward backend and system development, where I enjoy exploring how requests flow, how systems scale, and how performance can be fine‑tuned. What excites me most is the challenge of building reliable, resilient services that people can depend on. 
           </p>
 
@@ -60,7 +60,7 @@ export function HeroSection() {
 							href='mailto:eliyasinbox1@gmail.com'
 							target='_self'
 							rel='noopener noreferrer'>
-            <button className="border border-black text-primary px-8 py-4 rounded-lg font-medium hover:bg-surface-container-high transition-all duration-300">
+            <button className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-700 transition-all duration-300">
               Get in Touch
             </button>   </a>
           </div>

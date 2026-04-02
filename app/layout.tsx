@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   //title: 'ELIYAS | Solutions Engineer',
-	title: "llyaz", 
+title: "llyaz.me", 
   description: 'Solutions Engineer specializing in building scalable distributed systems and high-performance web architectures.',
   keywords: 'solutions engineer, web architecture, distributed systems, software development',
   authors: [{ name: 'llyaz' }],
@@ -27,11 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="light">
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
       </head>
-      <body className="bg-background text-on-background">
+      <body className="text-on-background min-h-screen">
         <div className="page-frame">
           {children}
         </div>

@@ -4,15 +4,15 @@ import Link from 'next/link'
 
 export function Navigation() {
   return (
-    <nav className="sticky top-0 w-full z-50 bg-background/90 border-b border-black/10 backdrop-blur-md">
+    <nav className="sticky top-0 w-full z-50 border-b border-black/10">
       <div className="flex justify-between items-center px-6 md:px-8 py-5 max-w-7xl mx-auto">
         {/* Left Side: Socials */}
-        <div className="flex items-center gap-4 text-[#2d3435]">
+        <div className="flex items-center gap-4 text-white"> {/* text[#2d3435]*/}
           <a
             href="https://github.com/itsllyaz"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary  border-primary/30 pb-0.5"
+            className="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors text-white  border-primary/30 pb-0.5"
           >
             GitHub
           </a>
@@ -20,7 +20,7 @@ export function Navigation() {
             href="https://linkedin.com/eliyas-bashaw"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary border-primary/30 pb-0.5"
+            className="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors text-white border-primary/30 pb-0.5"
           >
             LinkedIn
           </a>
@@ -28,7 +28,7 @@ export function Navigation() {
             href="https://twitter.com/llyas__"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary  border-primary/30 pb-0.5"
+            className="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors text-white  border-primary/30 pb-0.5"
           >
             Twitter
           </a>
@@ -36,7 +36,7 @@ export function Navigation() {
             href="https://t.me/devchronicles"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors text-primary  border-primary/30 pb-0.5"
+            className="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors text-white  border-primary/30 pb-0.5"
           >
             Telegram
           </a>
@@ -46,7 +46,7 @@ export function Navigation() {
         <div className="flex items-center">
           <Link
             href="/blog"
-            className="text-xs font-bold uppercase tracking-widest hover:text-primary transition-all duration-300 text-primary border-b border-primary/30 pb-0.5"
+            className="text-xs font-bold uppercase tracking-widest hover:text-white transition-all duration-300 text-white border-b border-primary/30 pb-0.5"
           >
             Blog
           </Link>

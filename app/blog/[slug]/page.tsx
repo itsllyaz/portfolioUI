@@ -77,7 +77,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
               <div className="flex items-center gap-2 mb-4 text-xs font-body font-medium uppercase tracking-tighter text-on-surface-variant">
                 <span>Development</span>
                 <span className="w-1 h-1 bg-black rounded-full"></span>
-                <span>{post.readTime} Min Read</span>
+                <span>{/*{post.readTime} Min Read */}</span>
               </div>
 
               <h1 className="text-3xl md:text-6xl font-headline font-bold tracking-tight text-on-surface mb-6 leading-[1.1]">
@@ -85,7 +85,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
               </h1>
 
               <div className="text-on-surface-variant font-headline font-medium text-sm">
-                PUBLISHED ON {post.date.toUpperCase()} BY {post.author.toUpperCase()}
+							{/*PUBLISHED ON {post.date.toUpperCase()} BY {post.author.toUpperCase()} */}
               </div>
             </header>
 

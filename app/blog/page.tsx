@@ -17,7 +17,7 @@ export default function BlogPage() {
         <div className="max-w-screen-xl mx-auto p-6 md:p-12">
           {/* Page Header / Intro */}
           <div className="mb-16 border-b border-black pb-8">
-            <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-4">BLOG</h1> 
+            <h1 className="font-headline text-white text-5xl md:text-7xl font-bold tracking-tighter mb-4">BLOG</h1> 
           </div>
 
           {/* Articles Grid */}
@@ -31,8 +31,8 @@ export default function BlogPage() {
                 image={post.image}
                 imageAlt={post.imageAlt}
                 tags={post.tags}
-                date={post.date}
-                readTime={post.readTime}
+                //date={post.date}
+               // readTime={post.readTime}
               />
             ))}
           </div>
