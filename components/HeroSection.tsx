@@ -49,7 +49,7 @@ export function HeroSection() {
    
 					<div className="flex flex-wrap gap-4 pt-4">
 						<a 
-							href='https://drive.google.com/file/d/1uzEeO_keof00j3uySBZbIOEfz7o1VjS7/view'
+							href='https://drive.google.com/file/d/1MODFr-z2TkSmbmnWA-_l2FdeULv5w4yw/view?usp=sharing'
 							target='_blank'
 							rel='noopener noreferrer'>
             <button className="bg-primary text-on-primary px-8 py-4 rounded-md font-medium flex items-center gap-2 hover:bg-primary-dim transition-all duration-300 border border-black/10">
